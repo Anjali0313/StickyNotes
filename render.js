@@ -36,8 +36,8 @@ export function renderStickyNote() {
   
     container.appendChild(stickyNote);
     stickyNote.style.position = 'absolute';
-    stickyNote.style.top = `${Math.random() * (window.innerHeight - 300)}px`;
-    stickyNote.style.left = `${Math.random() * (window.innerWidth - 300)}px`;
+    stickyNote.style.top = `${Math.random() * (window.innerHeight - 400)}px`;
+    stickyNote.style.left = `${Math.random() * (window.innerWidth - 400)}px`;
      makeDraggable(stickyNote);
 
     const removeBtn = stickyNote.querySelector('#removeNoteBtn');

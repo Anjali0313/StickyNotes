@@ -15,7 +15,7 @@ export function saveStickyNote(stickyNote) {
                 <div class="timestamps">${timestamp}</div>  
                 <div id='removeNote'>X</div>
             </div>
-            <div class="saved-content" contenteditable="true">${noteContent}</div>
+            <div class="saved-content" >${noteContent}</div>
         </div>
     `;
     document.querySelector('.save-data').appendChild(savedNote);
@@ -33,6 +33,7 @@ export function addSaveButtonListener() {
             const stickyNote = saveBtn.closest('.sticky-note');
             saveStickyNote(stickyNote); 
             saveNotesToLocalStorage();
+         
         });
     });
 }

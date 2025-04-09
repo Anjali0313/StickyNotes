@@ -242,7 +242,7 @@ h3,p{
     }
   
   .sticky-note {
-  
+  width: 350px;
     height: 300px;
     margin-left:20px;
    z-index: 9999px;
@@ -255,4 +255,12 @@ h3,p{
     min-height: 30px;
     font-size: 24px;
   }
+  .heading ,.saved-heading{
+    height: 25px;
+  font-size: 30px;
+}
+.heading {
+font-size: 25px;
+}
+  
 }
